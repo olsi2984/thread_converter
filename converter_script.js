@@ -132,16 +132,20 @@ btn2.addEventListener("click", function(){
   }  
   for (let i = 0; i < filtered_unf.length; i++) {
     document.getElementById("bspdisplay").innerHTML += filtered_bsp[i].thread + " , ";    
-  }  
-  reset_array();
-  
+  } 
     });
 
-function reset_array() {
+function clean() {
   filtered_unf = [];
   filtered_bsp = [];
+  document.getElementById("unfdisplay").innerHTML = "";
+  document.getElementById("bspdisplay").innerHTML = "";
 }
 
+var btn1 = document.querySelector('#clean');
+btn1.addEventListener("click", function(){ 
+    clean();
+   });
 
 
 
