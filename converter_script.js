@@ -126,11 +126,12 @@ btn2.addEventListener("click", function(){
   
   console.log(n);
   console.log(filtered_unf); 
-  
+  console.log(filtered_bsp); 
+
   for (let i = 0; i < filtered_unf.length; i++) {
     document.getElementById("unfdisplay").innerHTML += filtered_unf[i].thread + " , ";    
   }  
-  for (let i = 0; i < filtered_unf.length; i++) {
+  for (let i = 0; i < filtered_bsp.length; i++) {
     document.getElementById("bspdisplay").innerHTML += filtered_bsp[i].thread + " , ";    
   } 
     });
